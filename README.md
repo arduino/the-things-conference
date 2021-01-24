@@ -8,7 +8,7 @@ This repository hosts all the content and demo code to recreate the demos presen
 - How to run a custom machine learning model for machine vision applications
 
 ## Required Hardware and Software
-To try out all the examples you need to download some additional software and register an account with The Things Network and Edge Impulse.
+To try out all the examples you need to have a Portenta H7 development board and a Portenta Vision Shield. Also you need download some additional software and register an account with The Things Network and Edge Impulse to follow all demos.
 
 - The **Arduino IDE** can be downloaded from [this website](https://www.arduino.cc/en/software)
 - The **OpenMV IDE** can be downloaded from [this website](https://openmv.io/pages/download)
