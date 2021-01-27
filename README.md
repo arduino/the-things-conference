@@ -27,7 +27,7 @@ More information on getting started with Portenta can be found [here](https://ww
 
 ## Preparing The Arduino IDE for The Vision Shield LoRa
 
-In order to connect your Vision Shield LoRa to a LoRa network you will need the MKRWAN library. To install it, open the Arduino IDE and then open the library manager from the Tools menu. Search for "MKRWAN". Find the MKRWAN library (not MKRWAN_v2) and click on "Install" to install the latest version of the library (Version 1.0.14 at the time of writing this guide).
+In order to connect your Vision Shield LoRa to a LoRa network you will need the MKRWAN library. To install it, open the Arduino IDE and then open the library manager from the Tools menu. Search for "MKRWAN". Find the MKRWAN library (not MKRWAN_v2) and click on "Install" to install the latest version of the library (Version 1.0.14 at the time of writing this guide). Once it's installed, make sure you run the `MKRWANFWUpdate_standalone.ino` sketch from the examples menu under MKRWAN to update the LoRa modem firmware to version 1.2.1.
 
 ![](./documentation/arduino-ide-library-manager.png)
 
