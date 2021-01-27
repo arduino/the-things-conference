@@ -34,14 +34,22 @@ In order to connect your Vision Shield LoRa to a LoRa network you will need the 
 ## Preparing Portenta for OpenMV
 Most of the demos from this workshop require the OpenMV firmware to be installed on Portenta. Therefore I suggest you pre-install this firmware. Keep in mind that every time you upload an Arduino sketch and switch back to the OpenMV IDE you will have to re-flash the OpenMV firmware.
 
+If you haven't downloaded the **OpenMV IDE** you can download it from [this website](https://openmv.io/pages/download). Also, download firmware version 3.9.0 from [here](https://github.com/openmv/openmv/releases/download/v3.9.0/firmware_v3.9.0.zip) and extract the zip file.
+
 Connect the Portenta to your computer via the USB-C cable if you haven't done so yet. Put the Portenta in bootloader mode by double pressing the reset button on the board. The built-in green LED will start fading in and out. Now open the OpenMV IDE. Click on the "connect" symbol at the bottom of the left toolbar. 
 
 ![Click the connect button to attach the Portenta to the OpenMV IDE](documentation/por_openmv_click_connect.png)
 
-A pop-up will ask you how you would like to proceed "DFU bootloader(s) found. What would you like to do?". Select "Reset Firmware to Release Version". This will install the latest OpenMV firmware on the Portenta. 
+A pop-up will ask you how you would like to proceed "DFU bootloader(s) found. What would you like to do?". Select "Load a specific firmware". Select `firmware.bin` within the `PORTENTA` folder from the firmware folder `firmware_v3.9.0` that you just downloaded. This will install the OpenMV firmware on the Portenta. 
 
 ![Install the latest version of the OpenMV firmware](documentation/por_openmv_reset_firmware.png)
 
 Portenta's green LED will start flashing while the OpenMV firmware is being uploaded to the board. A terminal window will open which shows you the upload progress. Wait until the green LED stops flashing and fading. You will see a message saying "DFU firmware update complete!" when the process is done.
 
 The Portenta will start flashing its blue LED when it's ready to be connected. After confirming the completion dialog the Portenta should already be connected to the OpenMV IDE, otherwise click the "connect" button once again.
+
+## Using an SD Card with OpenMV
+
+If you want to use a micro SD card to store you data rather than the internal flash (16 MB limit), it's recommended to format it as `extFAT` with a MBR partition table. Here is an example of how the settings look like on MacOS in the Disk Utility tool. On Windows you can right click the drive and click "Format..." to get a similar dialog.
+
+![](./documentation/openmv-sd-format.png)
