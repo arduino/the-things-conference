@@ -13,7 +13,7 @@ To try out all the examples you need to have a [Portenta H7](https://store.ardui
 - The **Arduino IDE** can be downloaded from [this website](https://www.arduino.cc/en/software)
 - The **OpenMV IDE** can be downloaded from [this website](https://openmv.io/pages/download)
 
-- If you want to test the LoRa connectivity of the Portenta Vision Shield LoRa, you can register an account with **The Things Network** [here](https://account.thethingsnetwork.org/register).
+- If you want to test the LoRa connectivity of the Portenta Vision Shield LoRa, you can register an account with **The Things Stack** or **The Things Network** [here](https://account.thethingsnetwork.org/register).
 - To create your own custom machine learning models as seen in the demos, you need to register an **Edge Impulse** account [here](https://studio.edgeimpulse.com/).
 
 ## Preparing the Arduino IDE for Portenta
@@ -27,7 +27,7 @@ More information on getting started with Portenta can be found [here](https://ww
 
 ## Preparing The Arduino IDE for The Vision Shield LoRa
 
-In order to connect your Vision Shield LoRa to a LoRa network you will need the MKRWAN library. To install it, open the Arduino IDE and then open the library manager from the Tools menu. Search for "MKRWAN". Find the MKRWAN library (not MKRWAN_v2) and click on "Install" to install the latest version of the library.
+In order to connect your Vision Shield LoRa to a LoRa network you will need the MKRWAN library. To install it, open the Arduino IDE and then open the library manager from the Tools menu. Search for "MKRWAN". Find the MKRWAN library (not MKRWAN_v2) and click on "Install" to install the latest version of the library (Version 1.0.14 at the time of writing this guide).
 
 ![](./documentation/arduino-ide-library-manager.png)
 
