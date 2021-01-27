@@ -25,6 +25,12 @@ This is the software that allows you to access the Portenta's features. Choose t
 
 More information on getting started with Portenta can be found [here](https://www.arduino.cc/pro/tutorials/portenta-h7/por-ard-gs).
 
+## Preparing The Arduino IDE for The Vision Shield LoRa
+
+In order to connect your Vision Shield LoRa to a LoRa network you will need the MKRWAN library. To install it, open the Arduino IDE and then open the library manager from the Tools menu. Search for "MKRWAN". Find the MKRWAN library (not MKRWAN_v2) and click on "Install" to install the latest version of the library.
+
+![](./documentation/arduino-ide-library-manager.png)
+
 ## Preparing Portenta for OpenMV
 Most of the demos from this workshop require the OpenMV firmware to be installed on Portenta. Therefore I suggest you pre-install this firmware. Keep in mind that every time you upload an Arduino sketch and switch back to the OpenMV IDE you will have to re-flash the OpenMV firmware.
 
