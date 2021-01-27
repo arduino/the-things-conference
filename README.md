@@ -48,6 +48,12 @@ Portenta's green LED will start flashing while the OpenMV firmware is being uplo
 
 The Portenta will start flashing its blue LED when it's ready to be connected. After confirming the completion dialog the Portenta should already be connected to the OpenMV IDE, otherwise click the "connect" button once again.
 
+# Preparing the Demo Files
+
+There are a few files that we will need for the demos that need to be copied to the Portenta's flash drive. After successfully flashing your board with the OpenMV firmware, a flash drive on your computer should appear. If you happen to have a micro SD card, use that to have more available space. Copy all files from `demos/copy-to-portenta-drive` to the Portenta flash drive. If you're not using an SD card, you can skip the `Traffic.bin` file.
+
+![](./documentation/flash-drive-content.png)
+
 ## Using an SD Card with OpenMV
 
 If you want to use a micro SD card to store you data rather than the internal flash (16 MB limit), it's recommended to format it as `extFAT` with a MBR partition table. Here is an example of how the settings look like on MacOS in the Disk Utility tool. On Windows you can right click the drive and click "Format..." to get a similar dialog.
