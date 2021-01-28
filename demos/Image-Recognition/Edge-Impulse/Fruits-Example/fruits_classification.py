@@ -19,16 +19,14 @@ while(True):
 
     # default settings just do one detection... change them to search the image...
     for obj in tf.classify(net, img, min_scale=1.0, scale_mul=0.8, x_overlap=0.5, y_overlap=0.5):
-        #print("**********\nPredictions at [x=%d,y=%d,w=%d,h=%d]" % obj.rect())
-        #img.draw_rectangle(obj.rect())
 
         # This combines the labels and confidence values into a list of tuples
         predictions_list = list(zip(labels, obj.output()))
 
         for i in range(len(predictions_list)):
-            print("%s = %f" % (predictions_list[i][0], predictions_list[i][1]))
             confidence = predictions_list[i][1]
             label = predictions_list[i][0]
+            print("%s = %f" % (label[2:], confidence))
 
             if confidence > 0.9 and label != "unknown":
                 print("It's a", label, "!")
