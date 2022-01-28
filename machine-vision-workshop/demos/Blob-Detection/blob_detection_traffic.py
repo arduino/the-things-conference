@@ -7,7 +7,7 @@ sensor.set_pixformat(sensor.GRAYSCALE)
 sensor.set_framesize(sensor.QVGA)
 clock = time.clock()
 
-#sender = LoraSender(interval=18000)
+sender = LoraSender(interval=18000)
 img_reader = image.ImageIO("/Traffic.bin", "r")
 original_image = sensor.alloc_extra_fb(320, 240, sensor.GRAYSCALE)
 background_image = sensor.alloc_extra_fb(320, 240, sensor.GRAYSCALE)
@@ -32,7 +32,7 @@ for i in range(0, 10): # Or skip a few frames
 
 while(True):
     clock.tick() # Track elapsed milliseconds between snapshots().
-    #sender.check() # Check for pending LoRa messages
+    sender.check() # Check for pending LoRa messages
     target_image = img_reader.read(copy_to_fb=True, loop=True)
 
     # Make a copy of the image

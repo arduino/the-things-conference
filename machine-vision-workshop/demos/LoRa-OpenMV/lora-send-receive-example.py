@@ -1,7 +1,7 @@
 from lora import *
 import secrets
 
-lora = Lora(band=BAND_EU868, poll_ms=60000, debug=False)
+lora = Lora(band=BAND_EU868, poll_ms=60000, debug=True)
 
 print("Firmware:", lora.get_fw_version())
 print("Device EUI:", lora.get_device_eui())
@@ -13,7 +13,7 @@ appEui = secrets.appEui
 appKey = secrets.appKey
 
 try:
-    lora.join_OTAA(appEui, appKey, timeout=20000)
+    lora.join_OTAA(appEui, appKey)
     # Or ABP:
     #lora.join_ABP(devAddr, nwkSKey, appSKey, timeout=5000)
 # You can catch individual errors like timeout, rx etc...
