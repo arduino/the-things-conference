@@ -1,0 +1,18 @@
+{
+  "cpu": {
+    "fqbn": "arduino:samd:mkrwan1310",
+    "name": "Arduino MKR WAN 1310",
+    "type": "serial"
+  },
+  "secrets": [
+    {
+      "name": "SECRET_APP_EUI",
+      "value": ""
+    },
+    {
+      "name": "SECRET_APP_KEY",
+      "value": ""
+    }
+  ],
+  "included_libs": []
+}
